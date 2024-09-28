@@ -9,6 +9,10 @@ body {
   background-position:left top;
   background-attachment:scroll;
   background-size:auto;
+  background-image:url('https://www.freeimg.cn/i/2024/08/20/66c441bdb7c49.jpg');
+}
+#nav-1{
+  background-image:url('https://www.freeimg.cn/i/2024/08/20/66c441bdb7c49.jpg');
 }
 *{
   box-sizing:border-box;
@@ -132,9 +136,6 @@ body{
   border-bottom-right-radius:5px;
   border-bottom-left-radius:5px;
 }
-.custom-logo{
-  background-image:url("https://pic.imgdb.cn/item/66f770b5f21886ccc0eed7bc.jpg");
-}
 header{
   background-color:rgb(255, 255, 255);
 }
@@ -200,11 +201,6 @@ header + header{
   padding-left:10px;
   width:100%;
 }
-.htmlpage-cell{
-  width:8%;
-  display:table-cell;
-  height:75px;
-}
 .c13552{
   padding-top:10px;
   padding-right:10px;
@@ -212,14 +208,3 @@ header + header{
   padding-left:10px;
   color:rgb(8, 8, 8);
 }
-.c15465{
-  height:420px;
-  width:784px;
-}
-@media (max-width: 768px){
-  .htmlpage-cell{
-    width:100%;
-    display:block;
-  }
-}
-
