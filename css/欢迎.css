@@ -1,18 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 使用100%的视口高度来居中内容 */
+}
+
 .typewriter {
   width: 0;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
-  animation: typing 5s steps(30, end), blink-caret 0.75s step-end infinite;
   font-family: monospace;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
+  animation: typing 8s steps(40, end), blink-caret 0.75s step-end infinite;
 }
