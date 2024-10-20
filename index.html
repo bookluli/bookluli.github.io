@@ -6,20 +6,38 @@
 <title>Kimi AI 开发测试项目</title>
 <style>
   body {
-    background-color: black; /* 设置背景为黑色 */
-    color: white; /* 设置文字颜色为白色 */
-    font-family: Arial, sans-serif; /* 设置字体 */
-    margin: 0; /* 移除默认的边距 */
-    padding: 0; /* 移除默认的内边距 */
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 设置视口高度 */
   }
   .header-text {
-    font-size: 2em; /* 设置字体大小为2倍大 */
-    text-align: center; /* 文字居中显示 */
-    margin-top: 20px; /* 设置顶部边距 */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px; /* 设置底部边距 */
+  }
+  .help-button {
+    padding: 10px 20px; /* 设置按钮的内边距 */
+    font-size: 1em; /* 设置按钮字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    background-color: #4CAF50; /* 设置按钮背景颜色 */
+    color: white; /* 设置按钮文字颜色 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 设置边框圆角 */
+    outline: none; /* 移除焦点时的轮廓线 */
+  }
+  .help-button:hover {
+    background-color: #45a049; /* 设置鼠标悬停时的背景颜色 */
   }
 </style>
 </head>
 <body>
   <h1 class="header-text">欢迎来到基于Kimi AI 的开发测试项目！此项目完全由AI开发</h1>
+  <button class="help-button">帮助文档</button>
 </body>
 </html>
