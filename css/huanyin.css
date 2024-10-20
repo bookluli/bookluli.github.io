@@ -18,7 +18,7 @@ body {
   white-space: nowrap; /* 保持在同一行 */
   overflow: hidden; /* 隐藏溢出的内容 */
   width: 0; /* 初始宽度为0 */
-  animation: typing 8s steps(32, end), blink-caret 0.75s step-end infinite; /* 打字效果和光标闪烁 */
+  animation: typing 8s steps(40, end), blink-caret 0.75s step-end infinite; /* 打字效果和光标闪烁 */
 }
 
 @keyframes typing {
