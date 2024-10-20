@@ -1,15 +1,32 @@
-.container {
+body {
+  background-color: black; /* 黑色背景 */
+  color: white; /* 文本颜色为白色 */
+  font-family: 'Courier New', Courier, monospace; /* 打字机字体 */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* 使用100%的视口高度来居中内容 */
+  height: 100vh; /* 容器高度视口高度 */
+  margin: 0; /* 去除默认的外边距 */
+}
+
+.container {
+  text-align: center; /* 文本居中 */
 }
 
 .typewriter {
-  width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid;
-  font-family: monospace;
-  animation: typing 8s steps(40, end), blink-caret 0.75s step-end infinite;
+  border-right: 2px solid white; /* 白色光标 */
+  white-space: nowrap; /* 保持在同一行 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+  width: 0; /* 初始宽度为0 */
+  animation: typing 8s steps(32, end), blink-caret 0.75s step-end infinite; /* 打字效果和光标闪烁 */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
 }
