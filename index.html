@@ -22,7 +22,7 @@
     margin-bottom: 20px;
     color: #00bfff; /* 蓝色调 */
   }
-  .help-button {
+  .button {
     padding: 10px 20px;
     font-size: 1em;
     color: white;
@@ -31,8 +31,9 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin: 5px;
   }
-  .help-button:hover {
+  .button:hover {
     background: linear-gradient(45deg, #0056b3, #007BFF); /* 悬停时颜色变化 */
   }
 </style>
@@ -41,16 +42,16 @@
 <div class="welcome-text">
   欢迎来到基于Kimi AI 的开发测试项目！此项目完全由AI开发
 </div>
-<button class="help-button" onclick="openHelpDocument()">帮助文档</button>
+<button class="button" onclick="openHelpDocument()">帮助文档</button>
 
 <script>
 function openHelpDocument() {
-  // 在这里添加点击事件的处理逻辑
-  // 例如，可以打开一个新的窗口显示帮助文档
- function delayedRedirect() {
-  setTimeout(function() {
-    window.location.href = 'https://bookluli.github.io/';
-  }, 1000); // 1秒后跳转
+  alert('帮助文档按钮被点击了！');
+  // 在这里可以添加打开帮助文档的逻辑
+}
+
+function redirectToNewPage() {
+  window.location.href = 'https://www.moonshot.cn'; // 这里可以替换成你想要跳转的网址
 }
 </script>
 </body>
