@@ -48,19 +48,13 @@
     button:hover {
       background-color: #0056b3;
     }
-    #publishedContent {
-      margin-top: 20px;
-      padding: 10px;
-      border-top: 1px solid #eee;
-    }
-  </style>
+  </>
 </head>
 <body>
   <div class="container">
     <h1>发布文本</h1>
     <textarea id="editor"></textarea>
     <button onclick="publishText()">发布</button>
-    <div id="publishedContent"></div>
   </div>
 
   <script src="https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"></script>
@@ -74,8 +68,12 @@
 
     function publishText() {
       var content = editor.getValue();
-      // 这里可以将content发布到网页上，例如添加到一个div中
-      document.getElementById("publishedContent").innerHTML = content;
+      // 创建一个新的窗口并显示内容
+      var newWindow = window.open();
+      newWindow.document.write('<html><head><title>Published Content</title></head><body>');
+      newWindow.document.write('<h1>Published Content</h1>');
+      newWindow.document.write('<pre>' + content + '</pre>');
+      newWindow.document.write('</body></html>');
     }
   </script>
 </body>
