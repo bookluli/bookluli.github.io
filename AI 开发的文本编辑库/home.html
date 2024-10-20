@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上传并发布文本</title>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: '#textEditor',
+      plugins: 'link',
+      toolbar: 'undo redo | formatselect | bold italic | link'
+    });
+  </script>
+</head>
+<body>
+  <h1>上传并发布文本</h1>
+  <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="textContent">文本内容:</label>
+    <textarea id="textEditor" name="textContent"></textarea>
+    <br>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="上传并发布" name="submit">
+  </form>
+</body>
+</html>
