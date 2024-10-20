@@ -20,7 +20,7 @@
   .welcome-text {
     font-size: 2em; /* 放大两倍字体大小 */
     margin-bottom: 20px;
-    color: white; /* 蓝色调 */
+    color: white; /* 文本颜色改为白色 */
   }
   .button {
     padding: 10px 20px;
@@ -36,17 +36,30 @@
   .button:hover {
     background: linear-gradient(45deg, #0056b3, #007BFF); /* 悬停时颜色变化 */
   }
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 </style>
 </head>
 <body>
 <div class="welcome-text">
   欢迎来到基于Kimi AI 的开发测试项目！此项目完全由AI开发
 </div>
-<button class="button" onclick="redirectToNewPage()">帮助文档</button>
+<div class="buttons-container">
+  <button class="button" onclick="redirectToHelpPage()">帮助文档</button>
+  <button class="button" onclick="redirectToExamplePage()">示例页面</button>
+</div>
 
 <script>
-function redirectToNewPage() {
-  window.location.href = 'https://www.moonshot.cn';  // 这里可以替换成你想要跳转的网址
+function redirectToHelpPage() {
+  window.location.href = 'html/baozhu.html'; // 这里可以替换成帮助文档的网址
+}
+
+function redirectToExamplePage() {
+  // 这里可以替换成示例页面的网址
+  window.location.href = '#';
 }
 </script>
 </body>
