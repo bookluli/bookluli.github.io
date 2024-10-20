@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帮助文档目录</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    目录 {
+      list-style: none;
+      padding: 0;
+    }
+    目录 li {
+      margin-bottom: 10px;
+    }
+    目录 li a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    目录 li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>帮助文档目录</h1>
+    <p>欢迎使用我们的帮助文档。以下是文档的目录，您可以点击任意部分直接跳转到相关内容。</p>
+    
+    <ul class="目录">
+      <li><a href="#introduction">1. AI是怎么写出首页的效果的？</a></li>
+      <li><a href="#getting-started">2. 快速开始</a></li>
+      <li>
+        <a href="#user-guide">3. 用户指南</a>
+      </li>
+      <li><a href="#troubleshooting">4. 故障排除</a></li>
+      <li><a href="#faq">5. 常见问题解答</a></li>
+      <li><a href="#contact-support">6. 联系支持</a></li>
+    </ul>
+    
+    <h2 id="introduction">1. AI是怎么写出首页的效果的？</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>帮助文档</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    pre {
+      background-color: #eee;
+      border-radius: 4px;
+      padding: 10px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kimi AI 开发测试项目帮助文档</h1>
+    <p>欢迎使用Kimi AI 开发测试项目的帮助文档。本文档旨在帮助您理解项目中的HTML页面结构和样式。</p>
+    
+    <h2>HTML结构</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Kimi AI 开发测试项目&lt;/title&gt;
+  &lt;!-- 样式定义 --&gt;
+  &lt;style&gt;
+    // CSS样式省略...
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- 页面内容 --&gt;
+  &lt;div class=&quot;welcome-text&quot;&gt;
+    欢迎来到基于Kimi AI 的开发测试项目！此项目完全由AI开发
+  &lt;/div&gt;
+  &lt;button class=&quot;button&quot;&gt;帮助文档&lt;/button&gt;
+
+  &lt;!-- JavaScript函数定义 --&gt;
+  &lt;script&gt;
+    // JavaScript代码省略...
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    
+    <h2>代码解释</h2>
+    <p>以下是对代码中各个部分的解释：</p>
+    <ul>
+      <li><code>&lt;!DOCTYPE html&gt;</code>: 声明文档类型，告诉浏览器这是一个HTML5文档。</li>
+      <li><code>&lt;html lang=&quot;en&quot;&gt;</code>: 根元素，<code>lang=&quot;en&quot;</code> 属性指定了页面内容的主要语言是英语。</li>
+      <li><code>&lt;head&gt;</code>: 包含了文档的元数据，如字符集、视口设置和页面标题。</li>
+      <li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code>: 设置字符编码为UTF-8，支持多语言字符。</li>
+      <li><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>: 确保页面在移动设备上正确缩放。</li>
+      <li><code>&lt;title&gt;Kimi AI 开发测试项目&lt;/title&gt;</code>: 设置页面标题。</li>
+      <li><code>&lt;style&gt;</code>: 内部CSS样式，定义了页面的视觉样式。</li>
+      <li><code>&lt;body&gt;</code>: 包含了页面的可见内容。</li>
+      <li><code>&lt;div class=&quot;welcome-text&quot;&gt;</code>: 包含欢迎文本的容器，应用了特定的样式。</li>
+      <li><code>&lt;button class=&quot;button&quot;&gt;</code>: 一个按钮，点击时会触发 <code>redirectToNewPage</code> 函数。</li>
+      <li><code>&lt;script&gt;</code>: 包含了JavaScript代码，定义了 <code>redirectToNewPage</code> 函数，用于页面跳转。</li>
+    </ul>
+    
+    <h2>注意事项</h2>
+    <p>请确保您的网络连接稳定，以便正确加载和显示页面。如果页面中的链接无法访问，可能是因为网络问题或链接本身的问题。请检查链接的合法性并适当重试。</p>
+    
+    <p>如果您在使用过程中遇到任何问题，或者需要进一步的帮助，请随时联系我们。</p>
+  </div>
+</body>
+</html>
+    
+    <h2 id="getting-started">2. 快速开始</h2>
+    <p>指导新用户如何开始使用我们的产品或服务。</p>
+    
+    <h2 id="user-guide">3. 用户指南</h2>
+    <h2 id="troubleshooting">4. 故障排除</h2>
+    <p>提供解决常见问题的步骤和建议。</p>
+    
+    <h2 id="faq">5. 常见问题解答</h2>
+    <p>回答用户可能提出的常见问题。</p>
+    
+    <h2 id="contact-support">6. 联系支持</h2>
+    <p>提供联系客户支持的信息和指南。</p>
+  </div>
+</body>
+</html>
