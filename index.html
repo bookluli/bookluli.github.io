@@ -47,7 +47,10 @@
 function openHelpDocument() {
   // 在这里添加点击事件的处理逻辑
   // 例如，可以打开一个新的窗口显示帮助文档
-  alert('帮助文档按钮被点击了！');
+ function delayedRedirect() {
+  setTimeout(function() {
+    window.location.href = 'https://bookluli.github.io/';
+  }, 1000); // 1秒后跳转
 }
 </script>
 </body>
