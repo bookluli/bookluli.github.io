@@ -6,20 +6,47 @@
 <title>Kimi AI 开发测试项目</title>
 <style>
   body {
-    background-color: black; /* 设置背景为黑色 */
-    color: white; /* 设置文字颜色为白色 */
-    font-family: Arial, sans-serif; /* 设置字体 */
-    margin: 0; /* 移除默认的边距 */
-    padding: 0; /* 移除默认的内边距 */
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
-  .header-text {
-    font-size: 2em; /* 设置字体大小为2倍大 */
-    text-align: center; /* 文字居中显示 */
-    margin-top: 20px; /* 设置顶部边距 */
+  .welcome-text {
+    font-size: 2em; /* 放大两倍字体大小 */
+    margin-bottom: 20px;
+  }
+  .help-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .help-button:hover {
+    background-color: #0056b3;
   }
 </style>
 </head>
 <body>
-  <h1 class="header-text">欢迎来到基于Kimi AI 的开发测试项目！此项目完全由AI开发</h1>
+<div class="welcome-text">
+  欢迎来到基于Kimi AI 的开发测试项目！此项目完全由AI开发
+</div>
+<button class="help-button" onclick="openHelpDocument()">帮助文档</button>
+
+<script>
+function openHelpDocument() {
+  // 在这里添加点击事件的处理逻辑
+  // 例如，可以打开一个新的窗口显示帮助文档
+  alert('帮助文档按钮被点击了！');
+}
+</script>
 </body>
 </html>
