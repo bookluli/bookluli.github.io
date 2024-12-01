@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YZ产品</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  h1 {
+    font-size: 3em;
+    color: #333;
+    margin: 0;
+    font-weight: 300;
+  }
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  .feedback-input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  .feedback-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .feedback-button {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .feedback-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>欢迎使用YZ产品</h1>
+</header>
+
+<div class="feedback-form">
+  <input type="text" id="bugDescription" class="feedback-input" placeholder="描述问题...">
+  <button onclick="submitFeedback()" class="feedback-button">提交反馈</button>
+</div>
+
+<script>
+function submitFeedback() {
+  var bugDescription = document.getElementById('bugDescription').value;
+  if (bugDescription.trim() === '') {
+    alert('请填写问题描述！');
+    return;
+  }
+  // 这里可以添加更多的逻辑，比如发送数据到服务器
+  alert('反馈已提交：' + bugDescription);
+  // 清空输入框
+  document.getElementById('bugDescription').value = '';
+}
+</script>
+
+</body>
+</html>
